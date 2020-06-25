@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Task Item View Controller-->
+        <scene sceneID="yEt-dc-Wc0">
+            <objects>
+                <viewController storyboardIdentifier="EditTaskItemViewController" id="hSp-jA-oJF" customClass="EditTaskItemViewController" customModule="EvenTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a7i-Tg-YHT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="kGa-3O-ywx" userLabel="Dialog Box View">
+                                <rect key="frame" x="24" y="203" width="366" height="500"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lFj-vT-ggv">
+                                        <rect key="frame" x="23" y="52" width="320" height="396"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="duE-lI-3MT">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Name" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkL-cQ-x68">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="23"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUO-ag-9uY" userLabel="Task Name">
+                                                        <rect key="frame" x="0.0" y="36" width="320" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZA8-sh-Uxr">
+                                                        <rect key="frame" x="0.0" y="83" width="320" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="c6x-kw-xjF"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="X3G-6z-EKy">
+                                                <rect key="frame" x="0.0" y="108" width="320" height="138"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accumulated Time" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4j-gA-SeB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="23"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apO-8X-pM9">
+                                                        <rect key="frame" x="0.0" y="23" width="320" height="115"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="115" id="wu0-KS-xJD"/>
+                                                        </constraints>
+                                                    </datePicker>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="6K2-pq-qZo">
+                                                <rect key="frame" x="0.0" y="246" width="320" height="116"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h3E-3f-Ajh">
+                                                        <rect key="frame" x="36.5" y="42.5" width="247" height="31"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalCentering" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="VOa-Rh-Sme">
+                                                                <rect key="frame" x="0.0" y="0.0" width="247" height="31"/>
+                                                                <subviews>
+                                                                    <switch opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPF-QU-0m0" userLabel="Alarm Switch">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                        <connections>
+                                                                            <action selector="disableAlarm:" destination="hSp-jA-oJF" eventType="valueChanged" id="CvV-Oq-RZN"/>
+                                                                        </connections>
+                                                                    </switch>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="25" verticalHuggingPriority="251" text="Time only (No alarm)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B59-mL-I2p" userLabel="Promote Laggers">
+                                                                        <rect key="frame" x="61" y="5" width="186" height="21.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="h3E-3f-Ajh" firstAttribute="centerY" secondItem="6K2-pq-qZo" secondAttribute="centerY" id="Gf7-nG-g4N"/>
+                                                    <constraint firstItem="h3E-3f-Ajh" firstAttribute="centerX" secondItem="6K2-pq-qZo" secondAttribute="centerX" id="Ght-qn-neT"/>
+                                                    <constraint firstItem="h3E-3f-Ajh" firstAttribute="top" secondItem="6K2-pq-qZo" secondAttribute="top" constant="42.5" id="IPR-IY-QNa"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Uo-zk-dFM">
+                                                <rect key="frame" x="0.0" y="362" width="320" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                                <state key="normal" title="OK">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="okayButtonPressed:" destination="hSp-jA-oJF" eventType="touchUpInside" id="BOS-FW-MXU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="aia-UY-QYq"/>
+                                    <constraint firstItem="lFj-vT-ggv" firstAttribute="centerY" secondItem="kGa-3O-ywx" secondAttribute="centerY" id="oYh-M7-PNV"/>
+                                    <constraint firstItem="lFj-vT-ggv" firstAttribute="centerX" secondItem="kGa-3O-ywx" secondAttribute="centerX" id="qe0-dq-w4l"/>
+                                    <constraint firstAttribute="width" constant="366" id="wbq-Zb-6sP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kGa-3O-ywx" firstAttribute="centerX" secondItem="gsQ-1h-mBG" secondAttribute="centerX" id="AaR-yQ-VTZ"/>
+                            <constraint firstItem="kGa-3O-ywx" firstAttribute="centerY" secondItem="gsQ-1h-mBG" secondAttribute="centerY" id="zqW-p5-ZdY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gsQ-1h-mBG"/>
+                    </view>
+                    <connections>
+                        <outlet property="accumulatedTime" destination="apO-8X-pM9" id="FqJ-Jm-btj"/>
+                        <outlet property="alarmIsOffSwitch" destination="cPF-QU-0m0" id="2Ae-KU-ak3"/>
+                        <outlet property="dialogBoxView" destination="kGa-3O-ywx" id="7Ot-DM-RuI"/>
+                        <outlet property="okayButton" destination="7Uo-zk-dFM" id="xod-PI-up2"/>
+                        <outlet property="taskName" destination="dUO-ag-9uY" id="Jet-t0-U22"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ckg-vt-Vq8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159.42028985507247" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+</document>

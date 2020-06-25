@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		891FF03824A525010081640A /* AlarmSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891FF02124A525000081640A /* AlarmSettingsViewController.swift */; };
+		891FF03924A525010081640A /* AlarmSettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891FF02224A525000081640A /* AlarmSettingsViewController.storyboard */; };
+		891FF03A24A525010081640A /* AddTaskItemViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891FF02424A525000081640A /* AddTaskItemViewController.storyboard */; };
+		891FF03B24A525010081640A /* AddTaskItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891FF02524A525000081640A /* AddTaskItemViewController.swift */; };
+		891FF03C24A525010081640A /* ProtocolPopupDeligate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891FF02624A525000081640A /* ProtocolPopupDeligate.swift */; };
+		891FF03D24A525010081640A /* EditTaskItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891FF02824A525000081640A /* EditTaskItemViewController.swift */; };
+		891FF03E24A525010081640A /* EditTaskItemViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891FF02924A525000081640A /* EditTaskItemViewController.storyboard */; };
+		891FF03F24A525010081640A /* TaskListViewControllerTimers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891FF02C24A525000081640A /* TaskListViewControllerTimers.swift */; };
+		891FF04024A525010081640A /* TaskListViewControllerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891FF02D24A525000081640A /* TaskListViewControllerTableView.swift */; };
+		891FF04124A525010081640A /* TaskListViewControllerAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891FF02E24A525000081640A /* TaskListViewControllerAudio.swift */; };
+		891FF04224A525010081640A /* TaskColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891FF02F24A525000081640A /* TaskColor.swift */; };
+		891FF04324A525010081640A /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891FF03024A525000081640A /* TaskItem.swift */; };
+		891FF04424A525010081640A /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891FF03124A525000081640A /* TaskTableViewCell.swift */; };
+		891FF04524A525010081640A /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891FF03224A525000081640A /* TaskListViewController.swift */; };
+		891FF04624A525010081640A /* mac-quack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 891FF03424A525010081640A /* mac-quack.mp3 */; };
+		891FF04724A525010081640A /* Ding-ding-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 891FF03524A525010081640A /* Ding-ding-sound.mp3 */; };
+		891FF04824A525010081640A /* Singing-bowl-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 891FF03624A525010081640A /* Singing-bowl-sound.mp3 */; };
+		891FF04924A525010081640A /* ding-sound-effect_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 891FF03724A525010081640A /* ding-sound-effect_2.mp3 */; };
+		895C0D9324A522F70079FD93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895C0D9224A522F70079FD93 /* AppDelegate.swift */; };
+		895C0D9A24A522F70079FD93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895C0D9824A522F70079FD93 /* Main.storyboard */; };
+		895C0D9C24A523060079FD93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895C0D9B24A523060079FD93 /* Assets.xcassets */; };
+		895C0D9F24A523060079FD93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895C0D9D24A523060079FD93 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		891FF02124A525000081640A /* AlarmSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmSettingsViewController.swift; sourceTree = "<group>"; };
+		891FF02224A525000081640A /* AlarmSettingsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlarmSettingsViewController.storyboard; sourceTree = "<group>"; };
+		891FF02424A525000081640A /* AddTaskItemViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddTaskItemViewController.storyboard; sourceTree = "<group>"; };
+		891FF02524A525000081640A /* AddTaskItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskItemViewController.swift; sourceTree = "<group>"; };
+		891FF02624A525000081640A /* ProtocolPopupDeligate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPopupDeligate.swift; sourceTree = "<group>"; };
+		891FF02824A525000081640A /* EditTaskItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTaskItemViewController.swift; sourceTree = "<group>"; };
+		891FF02924A525000081640A /* EditTaskItemViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditTaskItemViewController.storyboard; sourceTree = "<group>"; };
+		891FF02C24A525000081640A /* TaskListViewControllerTimers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerTimers.swift; sourceTree = "<group>"; };
+		891FF02D24A525000081640A /* TaskListViewControllerTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerTableView.swift; sourceTree = "<group>"; };
+		891FF02E24A525000081640A /* TaskListViewControllerAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerAudio.swift; sourceTree = "<group>"; };
+		891FF02F24A525000081640A /* TaskColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskColor.swift; sourceTree = "<group>"; };
+		891FF03024A525000081640A /* TaskItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		891FF03124A525000081640A /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		891FF03224A525000081640A /* TaskListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		891FF03424A525010081640A /* mac-quack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "mac-quack.mp3"; sourceTree = "<group>"; };
+		891FF03524A525010081640A /* Ding-ding-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ding-ding-sound.mp3"; sourceTree = "<group>"; };
+		891FF03624A525010081640A /* Singing-bowl-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Singing-bowl-sound.mp3"; sourceTree = "<group>"; };
+		891FF03724A525010081640A /* ding-sound-effect_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ding-sound-effect_2.mp3"; sourceTree = "<group>"; };
+		895C0D8F24A522F70079FD93 /* EvenTimer_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvenTimer_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		895C0D9224A522F70079FD93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		895C0D9924A522F70079FD93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		895C0D9B24A523060079FD93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		895C0D9E24A523060079FD93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		895C0DA024A523060079FD93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		895C0D8C24A522F70079FD93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		891FF01F24A525000081640A /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				891FF02024A525000081640A /* AlarmSettings */,
+				891FF02324A525000081640A /* AddTaskItem */,
+				891FF02624A525000081640A /* ProtocolPopupDeligate.swift */,
+				891FF02724A525000081640A /* EditTaskItem */,
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
+		891FF02024A525000081640A /* AlarmSettings */ = {
+			isa = PBXGroup;
+			children = (
+				891FF02124A525000081640A /* AlarmSettingsViewController.swift */,
+				891FF02224A525000081640A /* AlarmSettingsViewController.storyboard */,
+			);
+			path = AlarmSettings;
+			sourceTree = "<group>";
+		};
+		891FF02324A525000081640A /* AddTaskItem */ = {
+			isa = PBXGroup;
+			children = (
+				891FF02424A525000081640A /* AddTaskItemViewController.storyboard */,
+				891FF02524A525000081640A /* AddTaskItemViewController.swift */,
+			);
+			path = AddTaskItem;
+			sourceTree = "<group>";
+		};
+		891FF02724A525000081640A /* EditTaskItem */ = {
+			isa = PBXGroup;
+			children = (
+				891FF02824A525000081640A /* EditTaskItemViewController.swift */,
+				891FF02924A525000081640A /* EditTaskItemViewController.storyboard */,
+			);
+			path = EditTaskItem;
+			sourceTree = "<group>";
+		};
+		891FF02A24A525000081640A /* TaskListView */ = {
+			isa = PBXGroup;
+			children = (
+				891FF02B24A525000081640A /* Extensions */,
+				891FF02F24A525000081640A /* TaskColor.swift */,
+				891FF03024A525000081640A /* TaskItem.swift */,
+				891FF03124A525000081640A /* TaskTableViewCell.swift */,
+				891FF03224A525000081640A /* TaskListViewController.swift */,
+			);
+			path = TaskListView;
+			sourceTree = "<group>";
+		};
+		891FF02B24A525000081640A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				891FF02C24A525000081640A /* TaskListViewControllerTimers.swift */,
+				891FF02D24A525000081640A /* TaskListViewControllerTableView.swift */,
+				891FF02E24A525000081640A /* TaskListViewControllerAudio.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		891FF03324A525010081640A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				891FF03424A525010081640A /* mac-quack.mp3 */,
+				891FF03524A525010081640A /* Ding-ding-sound.mp3 */,
+				891FF03624A525010081640A /* Singing-bowl-sound.mp3 */,
+				891FF03724A525010081640A /* ding-sound-effect_2.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		895C0D8624A522F60079FD93 = {
+			isa = PBXGroup;
+			children = (
+				895C0D9124A522F70079FD93 /* EvenTimer_sample */,
+				895C0D9024A522F70079FD93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		895C0D9024A522F70079FD93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				895C0D8F24A522F70079FD93 /* EvenTimer_sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		895C0D9124A522F70079FD93 /* EvenTimer_sample */ = {
+			isa = PBXGroup;
+			children = (
+				891FF01F24A525000081640A /* Dialogs */,
+				891FF03324A525010081640A /* Sounds */,
+				891FF02A24A525000081640A /* TaskListView */,
+				895C0D9224A522F70079FD93 /* AppDelegate.swift */,
+				895C0D9824A522F70079FD93 /* Main.storyboard */,
+				895C0D9B24A523060079FD93 /* Assets.xcassets */,
+				895C0D9D24A523060079FD93 /* LaunchScreen.storyboard */,
+				895C0DA024A523060079FD93 /* Info.plist */,
+			);
+			path = EvenTimer_sample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		895C0D8E24A522F70079FD93 /* EvenTimer_sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 895C0DA324A523060079FD93 /* Build configuration list for PBXNativeTarget "EvenTimer_sample" */;
+			buildPhases = (
+				895C0D8B24A522F70079FD93 /* Sources */,
+				895C0D8C24A522F70079FD93 /* Frameworks */,
+				895C0D8D24A522F70079FD93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EvenTimer_sample;
+			productName = EvenTimer_sample;
+			productReference = 895C0D8F24A522F70079FD93 /* EvenTimer_sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		895C0D8724A522F60079FD93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "JC Nolan";
+				TargetAttributes = {
+					895C0D8E24A522F70079FD93 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 895C0D8A24A522F60079FD93 /* Build configuration list for PBXProject "EvenTimer_sample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 895C0D8624A522F60079FD93;
+			productRefGroup = 895C0D9024A522F70079FD93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				895C0D8E24A522F70079FD93 /* EvenTimer_sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		895C0D8D24A522F70079FD93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891FF04724A525010081640A /* Ding-ding-sound.mp3 in Resources */,
+				895C0D9F24A523060079FD93 /* LaunchScreen.storyboard in Resources */,
+				891FF04924A525010081640A /* ding-sound-effect_2.mp3 in Resources */,
+				891FF04624A525010081640A /* mac-quack.mp3 in Resources */,
+				895C0D9C24A523060079FD93 /* Assets.xcassets in Resources */,
+				891FF03A24A525010081640A /* AddTaskItemViewController.storyboard in Resources */,
+				891FF03924A525010081640A /* AlarmSettingsViewController.storyboard in Resources */,
+				895C0D9A24A522F70079FD93 /* Main.storyboard in Resources */,
+				891FF04824A525010081640A /* Singing-bowl-sound.mp3 in Resources */,
+				891FF03E24A525010081640A /* EditTaskItemViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		895C0D8B24A522F70079FD93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891FF04124A525010081640A /* TaskListViewControllerAudio.swift in Sources */,
+				891FF04424A525010081640A /* TaskTableViewCell.swift in Sources */,
+				895C0D9324A522F70079FD93 /* AppDelegate.swift in Sources */,
+				891FF04224A525010081640A /* TaskColor.swift in Sources */,
+				891FF03F24A525010081640A /* TaskListViewControllerTimers.swift in Sources */,
+				891FF04524A525010081640A /* TaskListViewController.swift in Sources */,
+				891FF03B24A525010081640A /* AddTaskItemViewController.swift in Sources */,
+				891FF04324A525010081640A /* TaskItem.swift in Sources */,
+				891FF03824A525010081640A /* AlarmSettingsViewController.swift in Sources */,
+				891FF03C24A525010081640A /* ProtocolPopupDeligate.swift in Sources */,
+				891FF03D24A525010081640A /* EditTaskItemViewController.swift in Sources */,
+				891FF04024A525010081640A /* TaskListViewControllerTableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		895C0D9824A522F70079FD93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				895C0D9924A522F70079FD93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		895C0D9D24A523060079FD93 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				895C0D9E24A523060079FD93 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		895C0DA124A523060079FD93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		895C0DA224A523060079FD93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		895C0DA424A523060079FD93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DL84HFT85B;
+				INFOPLIST_FILE = EvenTimer_sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "LapinPublishing.EvenTimer-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		895C0DA524A523060079FD93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DL84HFT85B;
+				INFOPLIST_FILE = EvenTimer_sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "LapinPublishing.EvenTimer-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		895C0D8A24A522F60079FD93 /* Build configuration list for PBXProject "EvenTimer_sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				895C0DA124A523060079FD93 /* Debug */,
+				895C0DA224A523060079FD93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		895C0DA324A523060079FD93 /* Build configuration list for PBXNativeTarget "EvenTimer_sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				895C0DA424A523060079FD93 /* Debug */,
+				895C0DA524A523060079FD93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 895C0D8724A522F60079FD93 /* Project object */;
+}

@@ -202,6 +202,34 @@ extension TaskListViewController {
     self.countdownPostWarningBellsToRing       = 0
   }
   
+  // MARK: - Table Doubletap Timer Functions
+  
+  func startDoubleTapTimer(cell:TaskTableViewCell?) {
+    if tableDoubleTapTimer == nil {
+      let timer = Timer(timeInterval: 0.4,
+                        target: self,
+                        selector: #selector(handleDoubletapTimer),
+                        userInfo: cell,
+                        repeats: false)
+      RunLoop.current.add(timer, forMode: .common)
+      timer.tolerance = 0.05
+      
+      self.tableDoubleTapTimer = timer
+    }
+  }
+  
+  func cancelTableDoubleTapTimer() {
+    tableDoubleTapTimer?.invalidate()
+    tableDoubleTapTimer = nil
+  }
+  
+  @objc func handleDoubletapTimer(timer:Timer) {
+    
+    let cell = timer.userInfo as! TaskTableViewCell
+    cancelTableDoubleTapTimer()
+    handleTapped(cell:cell)
+  }
+  
   // MARK: - Task Timer Functions
   
   func startTaskTimer() {

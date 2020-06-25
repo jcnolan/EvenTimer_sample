@@ -31,6 +31,7 @@ class TaskListViewController: UIViewController, PopUpDelegate {
   
   var taskList: [TaskItem] = []
   var taskTimer: Timer? = nil
+  var tableDoubleTapTimer: Timer? = nil
   var displayLink: CADisplayLink?
   var startTime: CFTimeInterval?, endTime: CFTimeInterval?
   
@@ -83,45 +84,6 @@ class TaskListViewController: UIViewController, PopUpDelegate {
   @objc func doubleTapped() {
     
     // Handler for doubleTap.  Allows access to edit task (if tap is on a task) or add new task (if not on a task)
-    // However, doubleTaps are challenging as you still get a single-tap event on the table view, which must be sorted if need be
-    
-    func restoreTimerStatePriorToDoubleTap(currentActiveTaskNum:Int, prevActiveTaskNum:Int, lastTableViewTapStartedTimer:Bool) {
-      
-      // The single tap accompanying the double tap either stopped or started something out of turn
-      // Restore the running state prior to the single tap
-      
-      if (lastTableViewTapStartedTimer) {
-        
-        // Something was started out of turn - cancel current timers
-        
-        cancelTimers()
-        
-        if lastTableViewTapTimersWereActive {
-          
-          // Restart timer for prevActiveTaskNum
-          
-          countdownTimeElapsed = prevCountdownTimeElapsed
-          self.currentActiveTaskNum = prevActiveTaskNum
-          reactivateCountdownTimerForCurrentTask()
-          startTaskTimer()
-        }
-        
-      } else {
-        
-        // Something was stopped out of turn - restart it
-        
-        self.currentActiveTaskNum = prevActiveTaskNum
-        reactivateCountdownTimerForCurrentTask()
-        startTaskTimer()
-      }
-      
-      // Address possible errors in row highlighting by reloading and rehighlighing table
-      
-      tableView.reloadData()
-      highlightTableRow(rowIndex:self.currentActiveTaskNum, forceOne:true)
-    }
-    
-    // Ok, running state is now corrected - handle the actual double-tap event
     
     // Determine if the double tap was on a table row or off the table
     
@@ -132,9 +94,7 @@ class TaskListViewController: UIViewController, PopUpDelegate {
       
       // Table was doubleTapped, present edit dialog for the doubleTapped Task item
       
-      restoreTimerStatePriorToDoubleTap(currentActiveTaskNum: currentActiveTaskNum,
-                                        prevActiveTaskNum: prevActiveTaskNum,
-                                        lastTableViewTapStartedTimer: lastTableViewTapStartedTimer)
+      cancelTableDoubleTapTimer()
       presentEditTaskItem(lastTableViewTapIndexPath!.row)
       
     } else {

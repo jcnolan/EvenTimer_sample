@@ -60,30 +60,28 @@ extension TaskListViewController: UITableViewDataSource, UITableViewDelegate {
     }
   }
   
-  // Table row was tapped on
+  func clearSelectedRows() {
   
-  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    for cell in self.tableView.visibleCells {
+        cell.contentView.backgroundColor = TaskColor.white.value
+    }
+  }
     
-    // First, save row to later check on a double-tap in the UITapGestureRecognizer for doubleTapped for the whole VIew
+  func handleTapped(cell:TaskTableViewCell?) {
     
-    let now: TimeInterval = Date().timeIntervalSince1970
+    // Defferred handler for tap - called by timer after .4 second delay
     
-    lastTableViewTapTime = now
-    lastTableViewTapIndexPath = indexPath
-    lastTableViewTapTimersWereActive = taskList.filter({ $0.isActive }).count != 0
-
-    // Now handle tap... if a double-tap comes in we'll clean up / recover later
-    
-    guard let cell = tableView.cellForRow(at: indexPath) as? TaskTableViewCell else { return }
+    guard let cell = cell else {return}
     guard let task = cell.task else { return }
+    guard let selectedTaskNum:Int = tableView.indexPath(for:cell)?.last! else { return }
+
+    clearSelectedRows()
+    cell.contentView.backgroundColor = selectedRowHighlightColor
     
-    let timerState = task.isActive // Note cancelTimers will reset timerState so the value needs to be pulled prior to cancel
+    let timerState = task.isActive // Note cancelTimers will reset timerState so needs to be pulled prior to cancel
+    lastTableViewTapTimersWereActive = taskList.filter({ $0.isActive }).count != 0
     
     cancelTimers()
-    
-    let selectedTaskNum = indexPath.last!
-  
-    highlightTableRow(rowIndex:selectedTaskNum, forceOne:true) // Highlight the row, forcing all others off
     
     if timerState == false {
       
@@ -132,12 +130,22 @@ extension TaskListViewController: UITableViewDataSource, UITableViewDelegate {
     }
   }
   
-  // Handler to highlight row when it is tapped
+  // Table was tapped on
   
-  func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-    if let cell = tableView.cellForRow(at: indexPath) as? TaskTableViewCell {
-      cell.contentView.backgroundColor = TaskColor.white.value
-    }
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    // First, save row to later check on a double-tap in the UITapGestureRecognizer for doubleTapped for the whole VIew
+    
+    let now: TimeInterval = Date().timeIntervalSince1970
+    
+    lastTableViewTapTime = now
+    lastTableViewTapIndexPath = indexPath
+    
+    // No double-tap... keep looking
+    
+    guard let cell = tableView.cellForRow(at: indexPath) as? TaskTableViewCell else { return }
+    
+    startDoubleTapTimer(cell:cell)
   }
   
 }
